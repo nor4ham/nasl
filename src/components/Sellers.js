@@ -56,13 +56,12 @@ export   function Sellers() {
                                const {  name, image } = data;
                                return (
                                 <div className="item">
-                                <Card style={{ width: '100%'}} >
-                                <Card.Header > <img  src={image} alt="Image" /></Card.Header>
+                                <Card id="card"  style={{ width: '100%'}} >
+                              <img height={"100%"} src={image} alt="Image" />
                                 <Card.Body>
                                   <Card.Title>{name}</Card.Title>
                                   <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
+                                    هنا معلومات عن {name} واهم انجازاته 
                                   </Card.Text>
                                 </Card.Body>
                               </Card> 

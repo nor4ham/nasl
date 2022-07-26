@@ -341,7 +341,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
  
 }
-
+#card{
+  --bs-card-bg: linear-gradient(90.21deg, #FFCC00 -5.91%,#996533);
+  height: 100vh;
+}
+#card-heade {
+  height: 40vh;
+}
 /************ Projects Css ************/
 .camels {
   position: relative;
@@ -431,7 +437,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background-image: url('./assets/img/logo.png' ) ;
   background-size: cover;
   opacity: 0.2;
   position: absolute;
@@ -519,6 +524,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .button-order{
   background-color:  #FFCC00;
+
+}
+ /************ Comments Css ************/
+
+
+.g-height-50 {
+  height: 50px;
+}
+
+.g-width-50 {
+  width: 50px !important;
+}
+
+ 
+
+.g-bg-secondary {
+  background-color: #fafafa !important;
+}
+
+.u-shadow-v18 {
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
+}
+
+.g-color-gray-dark-v4 {
+  color: #777 !important;
+}
+
+.g-font-size-12 {
+  font-size: 0.85714rem !important;
+}
+
+.media-comment {
+  margin-top:20px;
 
 }
 

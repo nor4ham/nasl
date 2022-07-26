@@ -8,6 +8,10 @@ import {Login} from './components/Login'
 import {Registration} from './components/Registration'
 import { Routes, Route } from "react-router-dom";
 import {CamelProfile} from './components/CamelProfile'
+import {Order} from './components/Order'
+import {MyProfile} from './components/MyProfile'
+
+
 function App() {
   return (
     <Container>
@@ -19,11 +23,12 @@ function App() {
     <Row  className='main ' >
 
      <Routes>    
-     <Route path='/' element={<Row  className='main ' >
-      <Banner/><Sellers/><Camels/></Row>}></Route>
+    <Route path='/' element={<Row  className='main ' ><Banner/><Sellers/><Camels/></Row>}></Route>
     <Route path='/login' element={ <Login/>}></Route>
     <Route path='/signup' element={ <Registration/>}></Route>
     <Route path='/CamelProfile/:id' element={ <CamelProfile/>}></Route>
+    <Route path='/CamelProfile/:id/Order' element={ <Order/>}></Route>
+    <Route path='/Profile' element={ <MyProfile/>}></Route>
 
     
     </Routes> 
