@@ -1,8 +1,11 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { Col, Row, Container } from "react-bootstrap";
 import headerImg from "../assets/img/logo.png";
 import TrackVisibility from 'react-on-screen';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+
 export   function Registration() {
   return (
     <section className="banner" id="home">

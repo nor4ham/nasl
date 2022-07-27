@@ -95,6 +95,9 @@ export  function MyProfile() {
 					<HashLink to='edit'>
                         <button type="button" id="submit" name="submit" class="button-profile ">تعديل</button>
 					</HashLink>
+                    <HashLink to='add'>
+                        <button type="button" id="submit" name="submit" class="button-profile ">اضافة</button>
+					</HashLink>
                     </div>
                 </div>
             </div>

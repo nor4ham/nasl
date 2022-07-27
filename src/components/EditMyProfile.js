@@ -92,7 +92,7 @@ export  function EditMyProfile() {
             <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="text-right">
-                        <HashLink to='/'>
+                        <HashLink to='/Profile'>
                         <button type="button" id="submit" name="submit" class="button-profile ">الغاء</button>
                         </HashLink>  
                         <HashLink to='SuccessAlert'>

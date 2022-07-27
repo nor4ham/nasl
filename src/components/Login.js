@@ -1,10 +1,33 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { Col, Row, Container } from "react-bootstrap";
 import headerImg from "../assets/img/logo.png";
 import TrackVisibility from 'react-on-screen';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
 export   function Login() {
+  const [username, setUserName] = useState("")
+  const [password, setPassword] = useState("")
+  const navigate = useNavigate()
+  const loginUser = () => {
+    axios
+      .post(`http://nasel.herokuapp.com/accounts/login`, {
+        username,
+        password
+       })
+       .then((res) => {
+        
+        if (res.status === 200) {
+          localStorage.setItem("token", res.data.token);
+          navigate("/");
+/*           window.location.reload()
+ */        }
+      })
+      .catch((err) => {
+        console.log(err);
+
+      });
+  };
   return (
     <section className="banner" id="home">
     <Container>
@@ -15,26 +38,24 @@ export   function Login() {
       <Row className="vh-100 d-flex justify-content-center align-items-center">
         <Col md={8} lg={6} xs={12}>
              <div class="signup-form">
-                <form action="" class="       ">
                     <h4 class="mb-5 text-secondary">تسجيل الدخول </h4>
                     <div class="row">
                         <div class="mb-3 col-md-12">
                           
                             <label>اسم المستخدم<span class="text-danger">*</span></label>
-                            <input type="text" name="username" class="form-control" placeholder="اسم المستخدم"/>
+                            <input type="text"onChange={(e) =>{setUserName(e.target.value)}} name="username" class="form-control" placeholder="اسم المستخدم"/>
                         </div>
 
                         
                         <div class="mb-3 col-md-12">
                             <label>كلمةالمرور<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" placeholder=" كلمةالمرور"/>
+                            <input type="password"onChange={(e) =>{setPassword(e.target.value)}} name="password" class="form-control" placeholder=" كلمةالمرور"/>
                         </div>
                        
                         <div class="col-md-12">
-                        <button onClick={() => console.log('connect')}>&nbsp;    تسجيل الدخول &nbsp; <ArrowRightCircle size={25} /></button>
+                        <button onClick={loginUser}>&nbsp; تسجيل الدخول &nbsp; <ArrowRightCircle size={25} /></button>
                         </div>
                     </div>
-                </form>
                 <p class=" mt-3 text-secondary"><a href="#">هل نسيت كلمةالمرور ؟</a></p>
             </div>
           </Col>

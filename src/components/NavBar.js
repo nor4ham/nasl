@@ -5,15 +5,19 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg'; 
 import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
+  const navigate = useNavigate()
 
   const [activeLink, setActiveLink] = useState('home');
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
+  const onUpdateActiveLink = (value) => {setActiveLink(value);}
+  const login = localStorage.getItem("token")
+  const logout=()=>{
+    localStorage.clear()
+    navigate("/");
+
   }
-  let login =true;
-  const [logout, setlogout] = useState(true)
     const nav= ()=>{
     return(
       <Navbar.Collapse id="basic-navbar-nav">
@@ -56,8 +60,9 @@ export const NavBar = () => {
             <a href="#"><img src={navIcon3} alt="" /></a>
           </div> 
           <HashLink to='/'>
-            <button onClick={() => setlogout(false)}className="vvd"><span> تسجيل خروج </span></button>
+            <button onClick={logout}className="vvd"><span> تسجيل خروج </span></button>
           </HashLink>
+          
         </span>
       </Navbar.Collapse>
 
@@ -78,9 +83,9 @@ export const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          {login&& logout?navLogin() :nav()}
+          {login!=null?navLogin():nav()}  
           
-{/*           {first && <></>}
+{/*        {first && <></>}
           {x && <></>} */}
         </Container>
       </Navbar>

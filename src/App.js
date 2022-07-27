@@ -13,6 +13,7 @@ import {MyProfile} from './components/MyProfile'
 import {EditMyProfile} from './components/EditMyProfile'
 import {SuccessAlert} from './components/SuccessAlert'
 import {MyCamels} from './components/MyCamels'
+import {AddProfile} from './components/AddProfile'
 
 
 
@@ -36,6 +37,7 @@ function App() {
     <Route path='/Profile' element={ <MyProfile/>}></Route>
     <Route path='/Profile/edit/SuccessAlert' element={ <SuccessAlert/>}></Route>
     <Route path='/Profile/edit' element={ <EditMyProfile/>}></Route>
+    <Route path='/Profile/add' element={ <AddProfile/>}></Route>
     <Route path='/myCamels' element={ <MyCamels/>}></Route>
 
     

@@ -74,15 +74,17 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
 nav.navbar {
-  padding: 18px 0;
-  width: 100%;
+/*   padding: 18px 0;
+ */  width: 100%;
   position: fixed;
   top: 0;
   z-index: 9999;
    background-color: #ffffff
   
 }
+
 nav.navbar.scrolled {
   padding: 0px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
