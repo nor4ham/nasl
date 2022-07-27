@@ -95,7 +95,7 @@ export  function EditMyProfile() {
                         <HashLink to='/Profile'>
                         <button type="button" id="submit" name="submit" class="button-profile ">الغاء</button>
                         </HashLink>  
-                        <HashLink to='SuccessAlert'>
+                        <HashLink to='/Profile'>
                         <button type="button" id="submit" name="submit" class="button-profile">حفظ</button>
                     </HashLink>    
                     </div>

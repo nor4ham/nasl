@@ -2,11 +2,11 @@ import React from 'react'
 import { Col, Row, Container } from "react-bootstrap";
 import headerImg from "../assets/img/logo.png";
 import TrackVisibility from 'react-on-screen';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 export  function Order() {
   return (
-    <section className="banner" id="home">
+    <section className="banner" >
+
     <Container>
      <Row className="aligh-items-center">
       <Col xs={12} md={6} xl={7}>
@@ -15,7 +15,6 @@ export  function Order() {
       <Row className="vh-100 d-flex justify-content-center align-items-center">
         <Col md={8} lg={6} xs={12}>
         <div class="order-form">
-                <form action="" class="    ">
                     <h4 class="mb-5 text-secondary">اطلب الان </h4>
                     <div class="row">
                         <div class="mb-3 col-md-12">
@@ -50,13 +49,11 @@ export  function Order() {
                         </div>
                        
                         <div class="col-md-12">
-                        <button onClick={() => console.log('connect')}>&nbsp;    ادفع &nbsp; <ArrowRightCircle size={25} /></button>
+                        <button  className="  button-profile"  onClick={() => console.log('connect')}>&nbsp;    ادفع &nbsp; </button>
                         </div>
                     </div>
-                </form>
                 <p class=" mt-3 text-secondary"><a href="#">لدي مشاكل في الدفع </a></p>
             </div>
-            
           </Col>
       </Row>
     </Container>

@@ -25,11 +25,13 @@ export   function Login() {
       })
       .catch((err) => {
         console.log(err);
+        alert("كلمة السر او استخدم غير صحيحه" );
 
       });
   };
   return (
-    <section className="banner" id="home">
+    <section >
+    <br/><br/><br/><br/>
     <Container>
      <Row className="aligh-items-center">
       <Col xs={12} md={6} xl={7}>
@@ -53,7 +55,7 @@ export   function Login() {
                         </div>
                        
                         <div class="col-md-12">
-                        <button onClick={loginUser}>&nbsp; تسجيل الدخول &nbsp; <ArrowRightCircle size={25} /></button>
+                        <button className="  button-profile"  onClick={loginUser}>&nbsp; تسجيل الدخول &nbsp; </button>
                         </div>
                     </div>
                 <p class=" mt-3 text-secondary"><a href="#">هل نسيت كلمةالمرور ؟</a></p>

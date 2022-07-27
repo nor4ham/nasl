@@ -35,7 +35,7 @@ function App() {
     <Route path='/CamelProfile/:id' element={ <CamelProfile/>}></Route>
     <Route path='/CamelProfile/:id/Order' element={ <Order/>}></Route>
     <Route path='/Profile' element={ <MyProfile/>}></Route>
-    <Route path='/Profile/edit/SuccessAlert' element={ <SuccessAlert/>}></Route>
+{/*<Route path='/Profile/edit/SuccessAlert' element={ <SuccessAlert/>}></Route>*/}   
     <Route path='/Profile/edit' element={ <EditMyProfile/>}></Route>
     <Route path='/Profile/add' element={ <AddProfile/>}></Route>
     <Route path='/myCamels' element={ <MyCamels/>}></Route>
