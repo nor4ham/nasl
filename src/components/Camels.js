@@ -61,10 +61,10 @@ export   function Camels() {
                           <Nav.Link eventKey="first">المجاهيم</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                         <Nav.Link eventKey="third">الهامور</Nav.Link>
+                         <Nav.Link eventKey="third">الوضح</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                         <Nav.Link eventKey="second">الوضح</Nav.Link>
+                         <Nav.Link eventKey="second">اخرى</Nav.Link>
                         </Nav.Item>
                       </Nav>
                       <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
