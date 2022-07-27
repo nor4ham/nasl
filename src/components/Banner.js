@@ -55,7 +55,6 @@ export   function Banner() {
               {({ isVisible }) =>  
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">ياهلا وسهلا </span>
-                <br/> <br/>
 
                 <h1>{` `} <span/*  className="txt-rotate" */ dataPeriod="1000" data-rotate='[ "سفرت وأنورت، حياك بموقع نسل" ]'><span className="wrap">{text}</span></span></h1>
                   <p>هنا تقدر تلقى الجمل المناسب  لناقتك لسلاله اقوى ، وبرضو تقدر تنضم لنا وتبيع للمهتمين مثلك!</p>
@@ -68,6 +67,7 @@ export   function Banner() {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={headerImg} alt="Header Img"/>
+
                 </div>}
             </TrackVisibility>
           </Col>

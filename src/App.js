@@ -10,6 +10,11 @@ import { Routes, Route } from "react-router-dom";
 import {CamelProfile} from './components/CamelProfile'
 import {Order} from './components/Order'
 import {MyProfile} from './components/MyProfile'
+import {EditMyProfile} from './components/EditMyProfile'
+import {SuccessAlert} from './components/SuccessAlert'
+import {MyCamels} from './components/MyCamels'
+
+
 
 
 function App() {
@@ -29,7 +34,11 @@ function App() {
     <Route path='/CamelProfile/:id' element={ <CamelProfile/>}></Route>
     <Route path='/CamelProfile/:id/Order' element={ <Order/>}></Route>
     <Route path='/Profile' element={ <MyProfile/>}></Route>
+    <Route path='/Profile/edit/SuccessAlert' element={ <SuccessAlert/>}></Route>
+    <Route path='/Profile/edit' element={ <EditMyProfile/>}></Route>
+    <Route path='/myCamels' element={ <MyCamels/>}></Route>
 
+    
     
     </Routes> 
     </Row>

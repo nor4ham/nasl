@@ -110,6 +110,7 @@ span.navbar-text {
     display: inline-block;
     margin-left: 14px;
 }
+
 .social-icon a {
     width: 42px;
     height: 42px;
@@ -158,6 +159,7 @@ span.navbar-text {
 .button-order{
   border-radius: 20px;
   font-weight: 700;
+  color:#3E3E3E;
   background-color: #FFCC00;
   border: 1px solid #FFCC00;
   width: 100%;
@@ -167,6 +169,18 @@ span.navbar-text {
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+}
+.button-profile{
+  border-radius: 20px;
+  font-weight: 700;
+  color:#3E3E3E;
+  background-color: #FFCC00;
+  padding: 18px 34px;
+  height: 10vh;
+  font-size: 18px;
+  margin-left: 18px;
+	position: relative;
+  align-items: center;
 }
 .navbar-text button span {
   z-index: 1;
@@ -285,17 +299,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: updown 6s linear infinite;
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateX(-30px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateX(30px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateX(-30px);
     }
 }
 .txt-rotate > .wrap {
@@ -308,10 +322,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .sellers-bx {
-  background: #FFCC00;
-  border-radius: 64px;
+  background-color: rgb(255 204 0 / 20%);
+  border-radius: 25px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 10px 10px;
  }
 .sellers h2 {
 	font-size: 45px;
@@ -322,8 +336,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
-}
+ }
 .sellers-slider {
   width: 80%;
   margin: 0 auto;
@@ -339,22 +352,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+
  
 }
-#card{
-  --bs-card-bg: linear-gradient(90.21deg, #FFCC00 -5.91%,#996533);
-  height: 100vh;
+#card {
+  height: 80vh;
+  background-color: rgb(255 204 0 / 50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ border-radius: 25px;
 }
-#card-heade {
-  height: 40vh;
-}
+#card img{
+  height: 80vh;
+  border-radius: 25px;
+
+  object-fit: cover;
+
+ }
+
+
 /************ Projects Css ************/
 .camels {
   position: relative;
-  background: #FFCC00;
-  border-radius: 64px;
+  background-color: rgb(255 204 0 / 20%);
+   border-radius: 25px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 10px 10px;
+  
 }
 .camels h2 {
 	font-size: 45px;
@@ -374,9 +398,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .camels .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 25px;
   background-color: rgb(255 255 255 / 45%);
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .camels .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -385,7 +410,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
-  color: #fff;
+  color:#3E3E3E;
   width: 100%;
   font-size:23px;
   letter-spacing: 0.8px;
@@ -400,7 +425,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #FFCC00 -5.91%,#996533 111.58%);
+    background:#FFCC00 ;
     top: 0;
     left: 0;
     z-index: -1;
@@ -414,7 +439,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-first {
   /* border: 1px solid rgba(255, 255, 255, 0.5); */
-  border-radius: 55px 0px 0px 55px;
+  border-radius: 25px;
+
 }
 .nav-link#projects-tabs-tab-second {
 /*   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -429,11 +455,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 
 }
 .proj-imgbx img{
   width: 100%;
   height: 50vh;
+  
 }
 .proj-imgbx::before {
   content: "";
@@ -486,6 +515,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+/************ Profile Css ************/
+.account-settings .user-profile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+  margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+  margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #9fa8b9;
+}
+.account-settings .about {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.account-settings .about h5 {
+  margin: 0 0 15px 0;
+  color: #007ae1;
+}
+.account-settings .about p {
+  font-size: 0.825rem;
+}
+.form-control {
+  border: 1px solid #cfd1d8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: .825rem;
+  background: #ffffff;
+  color: #2e323c;
+}
+
+.card {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 1rem;
+}
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;

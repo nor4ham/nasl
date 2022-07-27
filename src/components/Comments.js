@@ -6,11 +6,11 @@ export  function Comments() {
     <div class="container">
      <div class="row">
          <div class="mb-3 col-md-12">
-             <label>اكتب تعليق</label>
+           <h2>اكتب تعليق:</h2>
               <textarea name="comment" class="form-control" placeholder="تعليق"/>
          </div>
          <span >
-        <button className="  button-order" onClick={() => console.log('connect')}>&nbsp;  علق  &nbsp;</button>
+        <button className="  button-profile" onClick={() => console.log('connect')}>&nbsp;  علق  &nbsp;</button>
        </span>
           </div>
           

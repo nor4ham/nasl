@@ -12,7 +12,8 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
-  let login =false;
+  let login =true;
+  const [logout, setlogout] = useState(true)
     const nav= ()=>{
     return(
       <Navbar.Collapse id="basic-navbar-nav">
@@ -21,6 +22,7 @@ export const NavBar = () => {
        <Nav.Link href="#sellers" className={activeLink === 'sellers' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sellers')}>شركاؤنا   </Nav.Link>
        <Nav.Link href="#order" className={activeLink === 'order' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('order')}>اطلب الان </Nav.Link>
      </Nav>
+
         <span className="navbar-text">
          <div className="social-icon">
             <a href="#"><img src={navIcon1} alt="" /></a>
@@ -54,27 +56,32 @@ export const NavBar = () => {
             <a href="#"><img src={navIcon3} alt="" /></a>
           </div> 
           <HashLink to='/'>
-            <button className="vvd"><span> تسجيل خروج </span></button>
+            <button onClick={() => setlogout(false)}className="vvd"><span> تسجيل خروج </span></button>
           </HashLink>
-  
         </span>
       </Navbar.Collapse>
 
     )
   }
 
+
+
+
+  
   return (
     
       <Navbar expand="md" >
         <Container>
-          
           <Navbar.Brand href="/">
           <img src={logo} alt="Logo" width={'70px'} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          {login ?navLogin():nav()}
+          {login&& logout?navLogin() :nav()}
+          
+{/*           {first && <></>}
+          {x && <></>} */}
         </Container>
       </Navbar>
   )

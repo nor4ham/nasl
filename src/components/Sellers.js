@@ -57,7 +57,8 @@ export   function Sellers() {
                                return (
                                 <div className="item">
                                 <Card id="card"  style={{ width: '100%'}} >
-                              <img height={"100%"} src={image} alt="Image" />
+                              <img src={image} alt="Image" />
+
                                 <Card.Body>
                                   <Card.Title>{name}</Card.Title>
                                   <Card.Text>

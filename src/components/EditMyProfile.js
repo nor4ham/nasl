@@ -1,8 +1,8 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link';
 
-export  function MyProfile() {
-	return (
+export  function EditMyProfile() {
+    return (
         <div class="container">
             <br/> <br/> <br/>  <br/><br/> <br/> 
     <div class="row gutters">
@@ -35,19 +35,19 @@ export  function MyProfile() {
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <label for="fullName">الاسم الكامل</label>
-                        <input disabled type="text" class="form-control" id="fullName" placeholder="ادخل اسمك " />
+                        <input type="text" class="form-control" id="fullName" placeholder="ادخل اسمك " />
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <label for="eMail">البريد الالكتروني</label>
-                        <input  disabled type="email" class="form-control" id="eMail" placeholder="ادخل البريد الالكتروني"/>
+                        <input type="email" class="form-control" id="eMail" placeholder="ادخل البريد الالكتروني"/>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <label for="phone">رقم الجوال</label>
-                        <input disabled type="text" class="form-control" id="phone" placeholder="ادخل رقم جوالك"/>
+                        <input type="text" class="form-control" id="phone" placeholder="ادخل رقم جوالك"/>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -61,19 +61,19 @@ export  function MyProfile() {
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <label for="Street">الشارع</label>
-                        <input disabled type="name" class="form-control" id="Street" placeholder="ادخل الشارع"/>
+                        <input type="name" class="form-control" id="Street" placeholder="ادخل الشارع"/>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <label for="ciTy">المدينه</label>
-                        <input disabled type="name" class="form-control" id="ciTy" placeholder="اكدخل المدينه"/>
+                        <input type="name" class="form-control" id="ciTy" placeholder="اكدخل المدينه"/>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <label for="zIp">Zip Code</label>
-                        <input disabled type="text" class="form-control" id="zIp" placeholder="Zip Code"/>
+                        <input type="text" class="form-control" id="zIp" placeholder="Zip Code"/>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@ export  function MyProfile() {
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="form-group">
                         <label for="Street">نبذه</label>
-                        <textarea disabled type="name" class="form-control" id="Street" placeholder=""/>
+                        <textarea type="name" class="form-control" id="Street" placeholder=""/>
                     </div>
                 </div>
             </div>
@@ -92,9 +92,12 @@ export  function MyProfile() {
             <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="text-right">
-					<HashLink to='edit'>
-                        <button type="button" id="submit" name="submit" class="button-profile ">تعديل</button>
-					</HashLink>
+                        <HashLink to='/'>
+                        <button type="button" id="submit" name="submit" class="button-profile ">الغاء</button>
+                        </HashLink>  
+                        <HashLink to='SuccessAlert'>
+                        <button type="button" id="submit" name="submit" class="button-profile">حفظ</button>
+                    </HashLink>    
                     </div>
                 </div>
             </div>
@@ -105,4 +108,5 @@ export  function MyProfile() {
     </div>
     
       )
+    
 }

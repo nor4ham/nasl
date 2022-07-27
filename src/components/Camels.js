@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { CamelCard } from "./CamelCard";
-import projImg1 from "../assets/img/logo.png";
 import TrackVisibility from 'react-on-screen';
 
 
@@ -110,8 +109,7 @@ export   function Camels() {
               </Col>
             </Row>
           </Container>
-          <img className="background-image-right" src={projImg1}></img>
-        </section>
+         </section>
       )
     }
     
