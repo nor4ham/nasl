@@ -38,8 +38,8 @@ export   function Sellers() {
         },
         {
           id: "3",
-          name: "دبوس الدبوس",
-          image: "https://gumlet.assettype.com/sabq%2Fimport%2Fuploads%2Fmaterial-file%2F5e173b04f1e32671028b4593%2F5e173afdaeaa2.jpg?auto=format%2Ccompress&fit=max&w=750&dpr=1.5",
+          name: "العاصي الشمري ",
+          image: "https://al-jafr.org.sa/wp-content/uploads/2020/01/E8C857D4-591C-409A-9630-A09B815C801A.jpeg",
       },
       ];
       return (
