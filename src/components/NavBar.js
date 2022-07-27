@@ -76,8 +76,8 @@ export const NavBar = () => {
   return (
     
       <Navbar expand="md" >
-        <Container>
-          <Navbar.Brand href="/">
+        <Container className="logo">
+          <Navbar.Brand  href="/">
           <img src={logo} alt="Logo" width={'70px'} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">

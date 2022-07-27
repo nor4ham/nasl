@@ -769,4 +769,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
  .w3-text-teal,.w3-hover-text-teal:hover{color: #FFCC00!important}
 
- 
+ .logo{ 
+  
+     margin: 0px!important;
+ }
