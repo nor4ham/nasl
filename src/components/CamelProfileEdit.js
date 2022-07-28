@@ -1,10 +1,10 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/img/logo.png';
+import { HashLink } from 'react-router-hash-link';
 
-export  function AddCamel() {
-    return (
-<div class="container">
+export  function CamelProfileEdit() {
+  return (
+    <div class="container">
                     <br/> <br/> <br/>  <br/><br/> <br/> 
     <div class="row gutters">
     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
@@ -113,7 +113,6 @@ export  function AddCamel() {
     </div>
     </div>
     </div>
-    
-      )
-    
+
+  )
 }

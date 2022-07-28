@@ -58,8 +58,7 @@ export  function MyCamels() {
     )
   })
 }
-<HashLink to='/myCamels/addCamel'>
-
+    <HashLink to='/myCamels/addCamel'>
     <button  className="  button-profile"  onClick={() => console.log('connect')}>&nbsp;    اضافه جمل &nbsp; </button>
     </HashLink>
 </Row>

@@ -14,6 +14,7 @@ import {EditMyProfile} from './components/EditMyProfile'
 import {AddCamel} from './components/AddCamel'
 import {MyCamels} from './components/MyCamels'
 import {AddProfile} from './components/AddProfile'
+import {CamelProfileEdit} from './components/CamelProfileEdit'
 
 
 
@@ -40,6 +41,7 @@ function App() {
     <Route path='/Profile/add' element={ <AddProfile/>}></Route>
     <Route path='/myCamels' element={ <MyCamels/>}></Route>
     <Route path='/myCamels/addCamel' element={ <AddCamel/>}></Route>
+    <Route path='/CamelProfile/:id/edit' element={ <CamelProfileEdit/>}></Route>
 
     
     

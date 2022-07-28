@@ -89,7 +89,11 @@ export  function CamelProfile() {
 
        </div>
      </div><br/>
-
+     <span >
+         <HashLink to='edit'>
+        <button className="  button-order" onClick={() => console.log('connect')}>&nbsp;  تعديل  &nbsp;</button>
+       </HashLink>
+       </span>
     </div>
 
       </div>
