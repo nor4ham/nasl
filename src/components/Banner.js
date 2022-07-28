@@ -3,6 +3,7 @@ import {Container,Row,Col} from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from "../assets/img/logo.png";
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from 'react-router-hash-link';
 
 export   function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -58,7 +59,9 @@ export   function Banner() {
 
                 <h1>{` `} <span/*  className="txt-rotate" */ dataPeriod="1000" data-rotate='[ "سفرت وأنورت، حياك بموقع نسل" ]'><span className="wrap">{text}</span></span></h1>
                   <p>هنا تقدر تلقى الجمل المناسب  لناقتك لسلاله اقوى ، وبرضو تقدر تنضم لنا وتبيع للمهتمين مثلك!</p>
+                  <HashLink to='signup'>
                   <button onClick={() => console.log('connect')}>&nbsp; انضم الينا وكنت احد شركاؤنا    &nbsp; <ArrowRightCircle size={25} /></button>
+                  </HashLink>
               </div>}
             </TrackVisibility>
           </Col>

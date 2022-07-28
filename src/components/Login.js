@@ -37,7 +37,7 @@ export   function Login() {
       <Col xs={12} md={6} xl={7}>
       <div>
     <Container>
-      <Row className="vh-100 d-flex justify-content-center align-items-center">
+      <Row className="  d-flex justify-content-center align-items-center">
         <Col md={8} lg={6} xs={12}>
              <div class="signup-form">
                     <h4 class="mb-5 text-secondary">تسجيل الدخول </h4>

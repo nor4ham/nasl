@@ -36,7 +36,7 @@ export   function Registration() {
       <Col xs={12} md={6} xl={7}>
       <div>
     <Container>
-      <Row className="vh-100 d-flex justify-content-center align-items-center">
+      <Row className=" d-flex justify-content-center align-items-center">
         <Col md={8} lg={6} xs={12}>
              <div class="signup-form">
                 <form action="" class="       ">

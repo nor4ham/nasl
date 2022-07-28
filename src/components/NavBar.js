@@ -23,8 +23,8 @@ export const NavBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
        <Nav.Link href="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>الرئسية</Nav.Link>
-       <Nav.Link href="#sellers" className={activeLink === 'sellers' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sellers')}>شركاؤنا   </Nav.Link>
-       <Nav.Link href="#order" className={activeLink === 'order' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('order')}>اطلب الان </Nav.Link>
+       <Nav.Link href="/#sellers" className={activeLink === 'sellers' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sellers')}>شركاؤنا   </Nav.Link>
+       <Nav.Link href="/#order" className={activeLink === 'order' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('order')}>اطلب الان </Nav.Link>
      </Nav>
 
         <span className="navbar-text">
