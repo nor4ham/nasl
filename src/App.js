@@ -11,7 +11,7 @@ import {CamelProfile} from './components/CamelProfile'
 import {Order} from './components/Order'
 import {MyProfile} from './components/MyProfile'
 import {EditMyProfile} from './components/EditMyProfile'
-import {SuccessAlert} from './components/SuccessAlert'
+import {AddCamel} from './components/AddCamel'
 import {MyCamels} from './components/MyCamels'
 import {AddProfile} from './components/AddProfile'
 
@@ -39,7 +39,9 @@ function App() {
     <Route path='/Profile/edit' element={ <EditMyProfile/>}></Route>
     <Route path='/Profile/add' element={ <AddProfile/>}></Route>
     <Route path='/myCamels' element={ <MyCamels/>}></Route>
+    <Route path='/myCamels/addCamel' element={ <AddCamel/>}></Route>
 
+    
     
     
     </Routes> 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { CamelCard } from "./CamelCard";
+import { HashLink } from 'react-router-hash-link';
 
 
 export  function MyCamels() {
@@ -57,6 +58,10 @@ export  function MyCamels() {
     )
   })
 }
+<HashLink to='/myCamels/addCamel'>
+
+    <button  className="  button-profile"  onClick={() => console.log('connect')}>&nbsp;    اضافه جمل &nbsp; </button>
+    </HashLink>
 </Row>
     </Container>
   )
